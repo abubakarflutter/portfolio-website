@@ -39,8 +39,6 @@ class _ProjectCardState extends State<ProjectCard> {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(10),
           child: AnimatedContainer(
-            // width: 300,
-            // height: 300,
             decoration: BoxDecoration(
               color: Colors.grey,
               boxShadow: [
@@ -58,15 +56,14 @@ class _ProjectCardState extends State<ProjectCard> {
                 AnimatedPositioned(
                   left: isHover ? -100 : -100,
                   top: isHover ? -50 : 0,
-                  width: 500,
+                  width: 450,
                   height: isHover ? 450 : 300,
                   child: Container(
                     // width: 300,
                     // height: 350,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: NetworkImage(
-                                'https://cdn.dribbble.com/users/1615584/screenshots/14282211/media/715273fd7f22b5834da83dac3fd2a346.jpg?compress=1&resize=1200x900&vertical=top'),
+                            image: NetworkImage(widget.project.imageUrl!),
                             fit: BoxFit.cover)),
                   ),
                   duration: const Duration(milliseconds: 1000),
@@ -98,13 +95,16 @@ class _ProjectCardState extends State<ProjectCard> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         AnimatedDefaultTextStyle(
-                          child: const Text(
-                            'Flutter E-Commerce Mobile Application',
+                          child: Text(
+                            widget.project.title!,
                           ),
-                          style: TextStyle(
-                              color:
-                                  Colors.white.withOpacity(isHover ? 1.0 : 0.6),
-                              fontSize: isHover ? 16 : 14),
+                          style: Theme.of(context)
+                              .textTheme
+                              .subtitle2!
+                              .copyWith(
+                                  color: Colors.white
+                                      .withOpacity(isHover ? 1.0 : 0.6),
+                                  fontSize: isHover ? 16 : 14),
                           duration: const Duration(milliseconds: 350),
                         )
                       ],
@@ -117,6 +117,8 @@ class _ProjectCardState extends State<ProjectCard> {
         ),
       ),
     );
+
+    ///----------Previous Project Card Code
     //   Container(
     //   decoration: BoxDecoration(
     //     color: secondaryColor,
