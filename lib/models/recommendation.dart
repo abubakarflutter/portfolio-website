@@ -11,7 +11,7 @@ final List<Recommendation> clientsRecommendations = [
     name: "Kolapo Obanewa",
     source: "Linkedin",
     clientRating: 5.0,
-    imageUrl: 'assets/images/face-1.jpg',
+    imageUrl: 'https://i.ibb.co/n7V7qFp/face-1.jpg',
     text:
         "I have had the pleasure of working with Anwar on two flutter project_detail and what strikes me the most about his work is his ability to write clean and reusable codes with best practices. He is hardworking and makes it so easy to transcribe ideas into beautiful and testable flutter apps. He is a Flutter/Dart gem and has my highest recommendation",
   ),
@@ -19,7 +19,7 @@ final List<Recommendation> clientsRecommendations = [
     name: "Reza Shahbazi",
     source: "Linkedin",
     clientRating: 4.5,
-    imageUrl: 'assets/images/face-2.jpg',
+    imageUrl: 'https://i.ibb.co/YPRzbRc/face-2.jpg',
     text:
         "Abu is great asset for any organization. It's a true pleasure working with him at TakeIn. His flutter skill is amazing as well as his professionalism and being a good team player. Abu's problem solving skill is also one of his great skills.",
   ),
@@ -27,7 +27,7 @@ final List<Recommendation> clientsRecommendations = [
     name: "Diadem",
     source: "YouTube",
     clientRating: 4.5,
-    imageUrl: 'assets/images/face-3.jpg',
+    imageUrl: 'https://i.ibb.co/ZWMmQDd/face-3.jpg',
     text:
         "I like your way you doing your project and you taught us. After I watch this I like and hit the subscribe button and then watch your video playlist one by one!! Within three hours, I learned a lot! I share your channel in my college WhatsApp group!",
   ),
@@ -35,7 +35,7 @@ final List<Recommendation> clientsRecommendations = [
     name: "Roshan Shetty",
     source: "YouTube",
     clientRating: 4.0,
-    imageUrl: 'assets/images/face-4.jpg',
+    imageUrl: 'https://i.ibb.co/C55W1Sg/face-4.jpg',
     text:
         "Very straightforward, professional and also the best flutter videos in the youtube! It will be great if you add some comments to your steps with 0.5 seconds pause before implementing this step. By meaning of steps, I mean not the basic, but structural steps, like 10-20 steps per video. However, thank you very much!",
   ),

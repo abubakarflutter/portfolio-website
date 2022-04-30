@@ -22,6 +22,7 @@ class RecommendationsWidget extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding),
           SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
             child: Row(
                 children: List.generate(

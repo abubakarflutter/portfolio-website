@@ -50,16 +50,18 @@ class ProjectsGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-        shrinkWrap: true,
-        itemCount: myProjects.length,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCountAccordingToSize!,
-          childAspectRatio: aspectRatioAccordingToSize!,
-          crossAxisSpacing: defaultPadding,
-          mainAxisSpacing: defaultPadding,
-        ),
-        itemBuilder: (context, index) => ProjectCard(
-              project: myProjects[index],
-            ));
+      physics: const BouncingScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: myProjects.length,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: crossAxisCountAccordingToSize!,
+        childAspectRatio: aspectRatioAccordingToSize!,
+        crossAxisSpacing: defaultPadding,
+        mainAxisSpacing: defaultPadding,
+      ),
+      itemBuilder: (context, index) => ProjectCard(
+        project: myProjects[index],
+      ),
+    );
   }
 }

@@ -70,7 +70,7 @@ class RecommendationCard extends StatelessWidget {
             right: 30,
             top: -20,
             child: CircleAvatar(
-              backgroundImage: AssetImage(recommendation.imageUrl!),
+              backgroundImage: NetworkImage(recommendation.imageUrl!),
               radius: 30,
             ),
           ),

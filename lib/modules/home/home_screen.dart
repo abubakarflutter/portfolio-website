@@ -47,8 +47,8 @@ class HomeScreen extends StatelessWidget {
                       height: double.infinity,
                       child: Stack(
                         children: [
-                          Image.asset(
-                            'assets/images/bg.jpeg',
+                          Image.network(
+                            'https://i.ibb.co/fYst2gz/bg.jpg',
                             fit: BoxFit.fill,
                           ),
                           Container(
@@ -58,6 +58,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SingleChildScrollView(
+                      physics: const BouncingScrollPhysics(),
                       child: Padding(
                         padding: const EdgeInsets.all(defaultPadding),
                         child: Column(

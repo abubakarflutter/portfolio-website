@@ -22,7 +22,9 @@ class _MyAvatarAndNameState extends State<MyAvatarAndName> {
               flex: 2,
             ),
             const CircleAvatar(
-              backgroundImage: AssetImage('assets/images/abubakar-cover.png'),
+              backgroundImage:
+                  NetworkImage('https://i.ibb.co/th8RR7k/abubakar-cover.png'),
+              // backgroundImage: NetworkImage('assets/images/abubakar-cover.png'),
               backgroundColor: Color(0xFF242430),
               radius: 50,
             ),

@@ -16,8 +16,8 @@ class DashboardImageWidget extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            'assets/images/bg.jpeg',
+          Image.network(
+            'https://i.ibb.co/fYst2gz/bg.jpg',
             fit: BoxFit.cover,
           ),
           Container(
@@ -76,7 +76,7 @@ class DashboardImageWidget extends StatelessWidget {
                   ),
                 ),
                 if (!Responsive.isMobileLarge(context))
-                  Image.asset('assets/images/abubakar-cover.png')
+                  Image.network('https://i.ibb.co/th8RR7k/abubakar-cover.png')
               ],
             ),
           ),
