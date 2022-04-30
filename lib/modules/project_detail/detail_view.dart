@@ -150,12 +150,12 @@ class _ProjectsDetailsViewState extends State<ProjectsDetailsView> {
                         ],
                       ),
 
-                      SizedBox(
-                        height: 50,
+                      const SizedBox(
+                        height: defaultPadding,
                       ),
 
                       ///-------Technology Stack Widget
-                      TechStackWidget()
+                      const TechStackWidget()
                     ],
                   ),
                 ),
