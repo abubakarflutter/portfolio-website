@@ -37,7 +37,7 @@ class _ProjectCardState extends State<ProjectCard> {
           });
         },
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
           child: AnimatedContainer(
             decoration: BoxDecoration(
               color: Colors.grey,
@@ -54,7 +54,7 @@ class _ProjectCardState extends State<ProjectCard> {
               children: [
                 ///----------------Project Image
                 AnimatedPositioned(
-                  left: isHover ? -100 : -100,
+                  left: isHover ? -50 : -50,
                   top: isHover ? -50 : 0,
                   width: 450,
                   height: isHover ? 450 : 300,

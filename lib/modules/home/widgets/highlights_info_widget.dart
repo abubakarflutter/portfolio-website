@@ -23,13 +23,13 @@ class HighLightsInfoWidget extends StatelessWidget {
                   children: const [
                     SingleHighLight(
                       animatedCounter: AnimatedCounter(
-                        value: 1,
+                        value: 2,
                       ),
                       label: 'Years Experience',
                     ),
                     SingleHighLight(
                       animatedCounter: AnimatedCounter(
-                        value: 200,
+                        value: 1000,
                       ),
                       label: 'Hours Coding',
                     ),
@@ -43,13 +43,13 @@ class HighLightsInfoWidget extends StatelessWidget {
                   children: const [
                     SingleHighLight(
                       animatedCounter: AnimatedCounter(
-                        value: 8,
+                        value: 15,
                       ),
                       label: 'Projects',
                     ),
                     SingleHighLight(
                       animatedCounter: AnimatedCounter(
-                        value: 11,
+                        value: 20,
                       ),
                       label: 'Happy Customers',
                     ),
@@ -62,25 +62,25 @@ class HighLightsInfoWidget extends StatelessWidget {
               children: const [
                 SingleHighLight(
                   animatedCounter: AnimatedCounter(
-                    value: 1,
+                    value: 2,
                   ),
                   label: 'Years Experience',
                 ),
                 SingleHighLight(
                   animatedCounter: AnimatedCounter(
-                    value: 8,
+                    value: 15,
                   ),
                   label: 'Projects',
                 ),
                 SingleHighLight(
                   animatedCounter: AnimatedCounter(
-                    value: 200,
+                    value: 1000,
                   ),
                   label: 'Hours of Coding',
                 ),
                 SingleHighLight(
                   animatedCounter: AnimatedCounter(
-                    value: 11,
+                    value: 20,
                   ),
                   label: 'Happy Customers',
                 ),

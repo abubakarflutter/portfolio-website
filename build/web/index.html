@@ -47,6 +47,19 @@
       transform: translate(-50%, -50%);
     }
 
+
+    .loadingText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      top: 68%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
     .loader {
       border: 16px solid #f3f3f3;
       border-radius: 50%;
@@ -85,10 +98,14 @@
 <body>
 
   <div class="loading">
-    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_Yiahbq.json"  background="transparent"  speed=".5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_atgq6whw.json"  background="transparent" style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
 <!--    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_vz0tqhxp.json" mode="bounce" background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>-->
 <!--    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_vz0tqhxp.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;"></lottie-player>-->
     <!--    <div class="loader"></div>-->
+  </div>
+  <br>
+  <div class="loadingText">
+    <h2 style="color: white; font-size: 16px; font-family:Lucida Console,Courier New,monospace;">Loading... Please Wait</h2>
   </div>
 
 
@@ -100,7 +117,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '1296261209';
+    var serviceWorkerVersion = '612598729';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
